@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson #10</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="btn-add-post-container">
+        <button class="btn-add-post" id="btn-add-post" onclick="openPostForm()">Add post</button>
+      </div>
+      <div class="container-posts" id="container-posts">
+        <div class="post-popup" id="post-popup">
+          <div class="post-popup-content" id="post-popup-content">
+            <div class="post-popup-title" id="post-popup-title"></div>
+            <div class="post-popup-body" id="post-popup-body"></div>
+          </div>
+          <div class="post-popup-close" id="post-popup-close">X</div>
+        </div>
+        <div class="post-add-popup" id="post-add-popup">
+          <div class="post-add-popup-content" id="post-add-popup-content">
+            <div class="post-add-popup-title" id="post-add-popup-title">
+              Add new post
+            </div>
+            <div class="post-add-popup-body" id="post-add-popup-body">
+              <div class="post-add-popup-body-title" id="post-add-popup-body-title">
+                Title
+              </div>
+              <input
+                type="text"
+                class="post-add-popup-body-title-input"
+                id="post-add-popup-body-title-input"
+              />
+              <div class="post-add-popup-body-text" id="post-add-popup-body-text">
+                Text
+              </div>
+              <textarea
+                class="post-add-popup-body-text-input"
+                id="post-add-popup-body-text-input"
+              ></textarea>
+              <div class="post-add-popup-body-btn" id="post-add-popup-body-btn">
+                <button class="btn-add-post" id="btn-add-post" onclick="addPost()">Add post</button>
+              </div>
+            </div>
+          </div>
+          <div class="post-add-popup-close" id="post-add-popup-close">X</div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
